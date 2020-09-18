@@ -241,17 +241,12 @@ def offers():
         page_offer = find(browser, _locators.page_title)
         assert page_offer.text == "Offers", "'%s' in page name" % page_offer.text
 
-        subtitle1 = find(page_offer, _locators.page_subtitle1)
-        assert subtitle1.text == "Normal site offer", \
-            "Normal site offers are on the page"
-
     finally:
         browser.quit()
         print("Done!")
 
 
-
-search_item()
+#search_item()
 #sign_up()
 #sign_in()
 #change_language()
