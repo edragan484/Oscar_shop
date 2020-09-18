@@ -61,7 +61,7 @@ def sign_up():
     mail = ''
     email = ''
     for x in range(1):
-        mail = mail + random.choice(list('qwertyuiop')) + random.choice(list('1234567890ASDFGHJKLZXCVBBNNM'))
+        mail = mail + random.choice(list('qwertyuiop')) + random.choice(list('1234567890ASDFGHJKLZXCVBBNNMM'))
         email = mail + '@' + 'gmail.com'
         print(email)
     try:
@@ -191,7 +191,7 @@ def add_item():
 
     finally:
         print("Done")
-        #browser.quit()
+        browser.quit()
 
 
 def remove_item():
