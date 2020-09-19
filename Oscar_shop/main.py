@@ -153,7 +153,7 @@ def change_language():
             "Basket button should contain italian name '%s''" % (basket_italiano.text)
 
     finally:
-        # print("Done")
+        print("Done")
         browser.quit()
 
 
@@ -220,7 +220,7 @@ def remove_item():
         assert "Your basket is now empty" == basket_note.text, "Basket is empty after removing"
 
     finally:
-        # browser.quit()
+        browser.quit()
         print("Done!")
 
 
