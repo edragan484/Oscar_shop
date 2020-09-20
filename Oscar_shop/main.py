@@ -248,7 +248,7 @@ def offers():
 
 #search_item()
 #sign_up()
-#sign_in()
+sign_in()
 #change_language()
 #add_item()
 #remove_item()
