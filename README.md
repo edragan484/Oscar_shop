@@ -1,3 +1,3 @@
 # Oscar_shop
 Shop_online
-This is progect of automation testing by Stepik
+This is project of automation testing by Stepik
