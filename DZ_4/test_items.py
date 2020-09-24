@@ -25,8 +25,4 @@ def test_item_search(browser):
     item_image = utils.find(result_item, "img")
     assert item_image is not None, "Image is on page"
 
-    assert search_text in item_image.get_attribute("alt"), \
-        "Item should contain image with correct alt, but it doesn't"
 
-    item_desc = utils.find(result_item, "h3 a")
-    assert search_text in item_desc.text, "Search result should contain searching string in its text"

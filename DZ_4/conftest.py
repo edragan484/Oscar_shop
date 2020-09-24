@@ -3,8 +3,8 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
 
-def pytest_adoption(parser):
-    parser.adoption('--language', action='store', default=None,
+def pytest_addoption(parser):
+    parser.addoption('--language', action='store', default=None,
                     help="Choose GUI language for tests")
 
 
