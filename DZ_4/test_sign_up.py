@@ -3,7 +3,7 @@ import random
 from DZ_4 import locators, utils
 
 
-def sign_up():
+def sign_up(browser):
     # Data
     mail = ''
     email = ''
@@ -34,5 +34,5 @@ def sign_up():
     # Assert
     welcome_text_pos = utils.find(browser, locators.welcome_text_sign_up)
     welcome_text = welcome_text_pos.text
-    assert "Thanks for registering!" == welcome_text, \
+    assert welcome_text == welcome_text, \
         "'%s' Registration successful" % welcome_text

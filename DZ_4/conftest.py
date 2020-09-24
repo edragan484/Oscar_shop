@@ -24,4 +24,4 @@ def browser(request):
     yield document
 
     print("\nquit browser..")
-    document.quit()
+    #document.quit()
