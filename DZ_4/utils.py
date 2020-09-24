@@ -20,3 +20,4 @@ def search_item(browser, text):
 
     search_input.send_keys(text)
     find(browser, locators.search_submit).click()
+

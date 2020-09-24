@@ -28,6 +28,8 @@ page_subtitle1 = "div#content_inner h2:nth-child(1)"
 main_page_subtitle = "section.well.well-blank div.sub-header h2"
 main_page_subtitle2 = "article.well.promotion_single div.sub-header h2"
 main_page_subtitle3 = "section.well.well-blank div.sub-header h3"
+item_page_title = "h1"
+button_add_search = "button.btn.btn-primary.btn-block"
 
 
 
