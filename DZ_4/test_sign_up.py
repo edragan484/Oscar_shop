@@ -3,12 +3,12 @@ import random
 from DZ_4 import locators, utils
 
 
-def sign_up(browser):
+def test_sign_up(browser):
     # Data
     mail = ''
     email = ''
     for x in range(1):
-        mail = mail + random.choice(list('qwertyuiop')) + random.choice(list('1234567890ASDFGHJKLZXCVBBNNMM'))
+        mail = mail + random.choice(list('1234567890qwertyuiop')) + random.choice(list('qwertyuiop1234567890ASDFGHJKLZXCVBBNNMM'))
         email = mail + '@' + 'gmail.com'
         print(email)
 
@@ -34,5 +34,5 @@ def sign_up(browser):
     # Assert
     welcome_text_pos = utils.find(browser, locators.welcome_text_sign_up)
     welcome_text = welcome_text_pos.text
-    assert welcome_text == welcome_text, \
+    assert "Thanks for registering!" == welcome_text, \
         "'%s' Registration successful" % welcome_text
