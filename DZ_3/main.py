@@ -1,6 +1,6 @@
 from selenium import webdriver
 import random
-from Oscar_shop import locators as _locators
+from DZ_3 import locators as _locators
 
 
 def find(parent, locator): return parent.find_element_by_css_selector(locator)
