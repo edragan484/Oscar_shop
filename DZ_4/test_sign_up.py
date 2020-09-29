@@ -8,7 +8,7 @@ def test_sign_up(browser):
     mail = ''
     email = ''
     for x in range(1):
-        mail = mail + random.choice(list('1234567890qwertyuiop')) + random.choice(list('qwertyuiop1234567890ASDFGHJKLZXCVBBNNMM'))
+        mail = mail + random.choice(list('1234567890qwertyuiop')) + random.choice(list('qwertyuiop1234567890ASDFGHJKLZXCVBBNNMM')) + random.choice(list('qwertyuiop1234567890ASDFGHJKLZXCVBBNNMM'))
         email = mail + '@' + 'gmail.com'
         print(email)
 
